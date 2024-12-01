@@ -17,7 +17,7 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping("/v1/products")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://fullstack-assignment-client.surge.sh")
     public List<ProductDTO> getProducts(
             @RequestParam(required = false) BigDecimal priceMin,
             @RequestParam(required = false) BigDecimal priceMax,
